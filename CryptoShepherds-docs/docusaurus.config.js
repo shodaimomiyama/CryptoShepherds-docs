@@ -79,7 +79,7 @@ const config = {
         title: 'CryptoShepherds Protocol',
         logo: {
           alt: 'CryptoShepherds Logo',
-          src: 'img/logo.svg',
+          src: 'img/cryptoshepherds.png',
         },
         items: [
           {
