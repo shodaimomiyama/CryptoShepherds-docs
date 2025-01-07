@@ -1,30 +1,49 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Basic usage
+# Basic functions
 
-## Creating and Encrypting a Folder
+CryptoShepherds provides a set of basic functions for data owners and sharers.
+
+With just six functions, you can store, retrieve, and share data in a completely decentralized manner.
+
+## Functions for Data Owners
+
+### Creating a Folder
 
 ```javascript title="JavaScript"
-await cs.createFolder('/user/documents');
+cs.createFolder('/path/to/folder');
 ```
 
-## Saving Data
+### Saving Data
 
 ```javascript title="JavaScript"
-await cs.saveData('/user/documents', 'file.txt', 'Hello World');
+cs.saveData('/path/to/folder', 'filename', data);
 ```
 
-## Retrieving Data
+### Retrieving Data
 
 ```javascript title="JavaScript"
-const data = await cs.loadData('/user/documents', 'file.txt');
+cs.loadData('/path/to/folder', 'filename');
 ```
 
-## Sharing a Folder
+## Functions for Data Sharers
+
+### Sharing a Folder
 
 ```javascript title="JavaScript"
-const decryptionCondition = { ownsNFT: '0xNFTContractAddress' };
-await cs.shareFolder('/user/documents', decryptionCondition);
+cs.setShareFolder('/path/to/folder', decryptionCondition);
+```
+
+### Sharing a File
+
+```javascript title="JavaScript"
+cs.setShareData('/path/to/folder', 'filename', decryptionCondition);
+```
+
+### Accessing Shared Data
+
+```javascript title="JavaScript"
+cs.getSharedData('/path/to/folder', 'filename');
 ```
