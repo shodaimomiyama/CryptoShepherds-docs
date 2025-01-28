@@ -11,11 +11,11 @@ sidebar_position: 1
 ## What is CryptoShepherds?
 ---
 
-The CryptoShepherds Protocol addresses the issue of default public access in decentralized storage by developing middleware that integrates folder structures and decentralized access control without the need for sharing encryption keys. 
+CryptoShepherdsプロトコルは、分散型ストレージにおけるデフォルトのパブリックアクセスの問題に対して、暗号化キーの共有なしでフォルダ構造と分散型アクセス制御を統合するミドルウェアを開発することで対処します。
 
-Developers can easily and integratively use data storage with folder structures and decentralized access control by simply incorporating the library and setting the destination folder and decryption conditions. 
+開発者は、ライブラリを組み込み、保存先フォルダと復号条件を設定するだけで、フォルダ構造と分散型アクセス制御を備えたデータストレージを簡単に統合的に利用できます。
 
-It creates folder structures through symmetric key-based hierarchical encryption, enabling secure folder sharing without the need to share encryption keys.
+対称鍵ベースの階層的暗号化によってフォルダ構造を作成し、暗号化キーを共有することなく安全なフォルダ共有を実現します。
 
 
 

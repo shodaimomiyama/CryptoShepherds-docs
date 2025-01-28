@@ -4,18 +4,16 @@ sidebar_position: 2
 
 # Key Features  
 
-Crypto
 
-## Keyless folder sharing
-
-
-## Creating Flexible Access Control Conditions
+## シンプルなフォルダ構造
 
 
-## Decentralized access control
+## 暗号化キーの共有不要なフォルダ共有
 
 
-## Data persistence
+## 柔軟な復号条件
+
+
 
 
 
