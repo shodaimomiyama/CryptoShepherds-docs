@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # Basic functions
 
-CryptoShepherds provides a set of basic functions for data owners and sharers.
+CryptoShepherdsはデータ所有者と共有者のための基本的な機能を提供します。
 
-With just six functions, you can store, retrieve, and share data in a completely decentralized manner.
+たった6つの機能で、完全に分散化された方法でデータの保存、取得、共有が可能です。
 
 ## Functions for Data Owners
 
@@ -45,5 +45,5 @@ cs.setShareData('/path/to/folder', 'filename', decryptionCondition);
 ### Accessing Shared Data
 
 ```javascript title="JavaScript"
-cs.getSharedData('/path/to/folder', 'filename');
+cs.accessData('/path/to/folder', 'filename');
 ```
