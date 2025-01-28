@@ -18,6 +18,23 @@ CryptoShepherds Protocolでは、分散型データ制御のスケーラビリ�
 対称鍵ベースの階層的暗号化によりフォルダ構造を作成し、暗号化キーの共有を必要としない安全なフォルダ共有を実現します。
 
 
+## Positioning
+---
+
+CryptoShepherds Protocolは、分散型ストレージの機能を拡張し、アプリケーションの可能性を広げるためのミドルウェアとして機能します。
+
+
+![alt text](./images/image_position.png)
+
+
+## Comparison
+---
+
+他のプロジェクトと比較して、**分散型の鍵管理**と**フォルダの共有**という観点に関して、優位性を持っています。
+
+![alt text](./images/image_comparison.png)
+
+
 
 ## Background and purpose
 ---

@@ -21,7 +21,7 @@ sidebar_position: 2
     
     ストレージサービスの支払いを怠ったり忘れたりしたらどうなるでしょうか。クレジットカード情報を更新し忘れてメールアドレスが変わってしまったらどうなるでしょうか。情報はいつ削除されるのでしょうか。ユーザーが支払いをしていない場合、これらの企業は長期間にわたって情報を保管しておくことはありません。
 
-![alt text](image.png)
+![alt text](./images/image.png)
 
 
 ### 長期的なデータの保存のソリューション
@@ -31,7 +31,7 @@ sidebar_position: 2
  長期的なデータの保存のソリューションの一つに分散型ストレージがあります。
  データを中央集権的なサーバーではなく、ネットワーク上の複数のノードに分散して保存する仕組みのことです。従来の集中型ストレージと異なり、単一障害点がなく、データの冗長性と可用性が高いという特徴があります。また、データの所有権をユーザー自身が保持できるため、データ主権の観点からも注目されています。
 
-![alt text](image-1.png)
+![alt text](./images/image-1.png)
 
 ### Arweave
 
@@ -44,7 +44,7 @@ Arweaveでは、一度限りの支払いで、200年以上のデータの保存�
 
 CryptoShepherds Protocolでは、Arweaveを利用してデータを保存します。
 
-![alt text](image-2.png)
+![alt text](./images/image-2.png)
 
 
 ### 課題の背景
@@ -55,13 +55,13 @@ CryptoShepherds Protocolでは、Arweaveを利用してデータを保存しま�
 また、デフォルト公開性を持つため、データのプライバシー性が低いという問題があります。
 Arweaveで実行されるtxは[Arweave Explorer](https://viewblock.io/arweave)で誰でも閲覧可能です。
 
-![alt text](image-3.png)
+![alt text](./images/image-3.png)
 
 そこで、Arweaveを利用してデータを構造的に保存し、共有するためのプロトコルとして[ArDrive](https://ardrive.io/)を筆頭に、さまざまなプロトコルが普及しています。
 
 ArDriveは、Arweaveのデータをフォルダ構造で整理し、ドライブの共有を可能にする現在最も普及しているプロトコルですが、その共有方法はURLによる共有であり、そのURLに暗号化キーをURLに含める必要があります。
 
-![alt text](image-5.png)
+![alt text](./images/image-5.png)
 
 そこで、分散型ストレージにおける暗号化キーの共有不要なフォルダ共有ミドルウェアとして、CryptoShepherds Protocolが誕生しました！
 
