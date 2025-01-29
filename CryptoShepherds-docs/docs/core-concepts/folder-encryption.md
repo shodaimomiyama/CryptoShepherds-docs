@@ -1,10 +1,47 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# 暗号化アルゴリズム
+# Hierarchical Encryption
 
-## Importance of encryption
+## Basic Encryption
+
+暗号化アルゴリズムのベースとなる暗号化キーには、公開鍵暗号化方式と共通鍵暗号化方式が使用されています。
+
+- 公開鍵暗号化方式
+
+    公開鍵ペアの秘密鍵は、データ所有者のマスターアクセス権として機能します。
+
+    [ECIES](https://en.wikipedia.org/wiki/Integrated_Encryption_Scheme)標準の公開鍵暗号化方式が使用されています。
+
+- 共通鍵暗号化方式
+
+    共通鍵は、データ所有者のルートのフォルダに紐づいている`GLOBAL_KEY`, ルート配下の各フォルダに対応している`GROUP_KEY`, データそのものを暗号化する`DATA_KEY`に分けられ、`秘密鍵`⇨`GLOBAL_KEY`⇨`GROUP_KEY`⇨`DATA_KEY`の順で暗号化されることで、階層的な暗号化が実現されています。
+
+    [AES-256-GCM](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)が使用されています。
 
 
-## How encryption works in CryptoShepherds
+
+## How it works
+
+### 対称鍵（共通鍵）をベースとした階層的暗号化構造によるフォルダ構造
+
+
+[For Developers](../introduction/for-developers.md)セクションで述べたように、CryptoShepherds Protocolでは、**単一のデータのアクセス制御だけで、それに紐づくすべてのデータを共有する**ことと、**分散型ストレージに暗号データを構造的に保存する**ことを両方実現することで、分散型のデータ制御のスケーラビリティを高めています。
+
+これを実現するため、フォルダ構造は、対称鍵（共通鍵）をベースとした階層的暗号化構造によって実現されています。
+
+では、対称鍵（共通鍵）をベースとした階層的暗号化構造について、詳しく見ていきましょう。
+
+#### フォルダ構造の例
+
+例えば、４層のフォルダとそれに保存されるデータについて考えてみます。
+
+`/a/b/c/d`フォルダを作成して、`d`フォルダの中に`data`を保存するケースを考えます。
+
+対称鍵（共通鍵）をベースとした階層的暗号化構造では、フォルダに対しての暗号化キーの割り当てを行います。
+具体的なプロセスとしては、入力されたファイルパスから、割り当てる暗号化キーを生成します。
+
+
+
+

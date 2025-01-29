@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # First project setup
@@ -9,7 +9,7 @@ sidebar_position: 3
 以下のように、SDKの初期化を行います。
 
 ```javascript title="JavaScript"
-import { CryptoShepherds } from 'cryptoshepherds-sdk';
+import CryptoShepherds from 'cryptoshepherds-sdk';
 
 const cs = new CryptoShepherds({
     walletKey: arweaveKey,
@@ -23,16 +23,16 @@ const cs = new CryptoShepherds({
 
 初期化時に必要な項目は以下の4つです。
 
-・arweaveWalletKey
+- arweaveWalletKey
 
-・EVMの秘密鍵
+- EVMの秘密鍵
 
-・arweaveNetworkの選択（mainnet or testnet）
+- arweaveNetworkの選択（mainnet or testnet）
 
-・LitNetworkの選択（mainnet or testnet or development）
+- LitNetworkの選択（mainnet or testnet or development）
 
 また、オプションで以下の項目を初期化時に設定することができます。
 
-・データ所有者のマスターアクセス権となる秘密鍵（privateKey: userPrivateKey）
+- データ所有者のマスターアクセス権となる秘密鍵（privateKey: userPrivateKey）
 
-・データ所有者のマスターアクセス権となる秘密鍵野ペアとなる公開鍵（publicKey: userPublicKey）
+- データ所有者のマスターアクセス権となる秘密鍵野ペアとなる公開鍵（publicKey: userPublicKey）
