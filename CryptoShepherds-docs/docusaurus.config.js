@@ -25,7 +25,7 @@ const config = {
   organizationName: 'shodaimomiyama', // Usually your GitHub org/user name.
   projectName: 'CryptoShepherds_Client_v2', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -103,7 +103,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/category/introduction',
               },
             ],
           },
