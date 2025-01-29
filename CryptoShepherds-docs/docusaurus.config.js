@@ -11,7 +11,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CryptoShepherds Protocol',
-  tagline: 'スケーラブルな分散型データ制御',
+  tagline: 'スケーラブルな分散型のデータ制御',
   favicon: 'img/cryptoshepherds.png',
 
   // Set the production url of your site here
