@@ -4,32 +4,30 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '分散型のデータ制御',
+    Svg: require('@site/static/img/data.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        アクセス制御と保存を分散型で統合的に行うことができます。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '柔軟な復号条件',
+    Svg: require('@site/static/img/decrypt.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        オンチェーンでの検証から、apiを呼び出したオフチェーンコードの実行まで、あらゆる復号条件を設定できます。
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'シンプルなSDK',
+    Svg: require('@site/static/img/develop.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        6つの基本関数からなるシンプルなSDKを提供しています。
+        学習コストはほぼ0です。
       </>
     ),
   },

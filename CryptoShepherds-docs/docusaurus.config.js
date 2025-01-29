@@ -11,19 +11,19 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CryptoShepherds Protocol',
-  tagline: 'Secure and Decentralized Data Storage and Sharing',
-  favicon: 'img/favicon.ico',
+  tagline: 'スケーラブルな分散型データ制御',
+  favicon: 'img/cryptoshepherds.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://cryptoshepherds.netlify.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'shodaimomiyama', // Usually your GitHub org/user name.
+  projectName: 'CryptoShepherds_Client_v2', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -74,7 +74,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/cryptoshepherds.png',
       navbar: {
         title: 'CryptoShepherds Protocol',
         logo: {
@@ -88,9 +88,8 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/shodaimomiyama/CryptoShepherds_Client_v2',
             label: 'GitHub',
             position: 'right',
           },
@@ -109,19 +108,11 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Developer',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
                 label: 'X',
-                href: 'https://x.com/docusaurus',
+                href: 'https://x.com/ShdMmym',
               },
             ],
           },
@@ -129,17 +120,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/shodaimomiyama/CryptoShepherds_Client_v2',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} CryptoShepherds Protocol, Shodai Momiyama.`,
       },
       prism: {
         theme: prismThemes.github,
