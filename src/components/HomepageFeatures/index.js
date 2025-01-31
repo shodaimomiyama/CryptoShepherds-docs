@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/decrypt.svg').default,
     description: (
       <>
-        オンチェーンでの検証から、apiを呼び出したオフチェーンコードの実行まで、あらゆる復号条件を設定できます。
+        オンチェーンでの検証から、APIを呼び出したオフチェーンコードの実行まで、あらゆる復号条件を設定できます。
       </>
     ),
   },
